@@ -4,7 +4,8 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:gravity="center"
-	android:orientation="vertical">
+	android:orientation="vertical"
+	android:background="@drawable/fondo">
 
 	<LinearLayout
 		android:layout_width="match_parent"
@@ -152,7 +153,7 @@
 					android:layout_marginLeft="21dp"
 					android:layout_marginTop="55dp"
 					android:layout_marginRight="21dp"
-					android:src="@mipmap/logosin"
+					android:src="@mipmap/logosi"
 					android:background="@drawable/imagee"/>
 
 			</LinearLayout>

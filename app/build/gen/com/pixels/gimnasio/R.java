@@ -3223,24 +3223,25 @@ containing a value of this type.
         public static final int design_ic_visibility_off=0x7f02005a;
         public static final int design_password_eye=0x7f02005b;
         public static final int design_snackbar_background=0x7f02005c;
-        public static final int ic_login_bk=0x7f02005d;
-        public static final int imagee=0x7f02005e;
-        public static final int inicio=0x7f02005f;
-        public static final int login_button_bk=0x7f020060;
-        public static final int login_shape_bk=0x7f020061;
-        public static final int navigation_empty_icon=0x7f020062;
-        public static final int notification_action_background=0x7f020063;
-        public static final int notification_bg=0x7f020064;
-        public static final int notification_bg_low=0x7f020065;
-        public static final int notification_bg_low_normal=0x7f020066;
-        public static final int notification_bg_low_pressed=0x7f020067;
-        public static final int notification_bg_normal=0x7f020068;
-        public static final int notification_bg_normal_pressed=0x7f020069;
-        public static final int notification_icon_background=0x7f02006a;
-        public static final int notification_template_icon_bg=0x7f02006d;
-        public static final int notification_template_icon_low_bg=0x7f02006e;
-        public static final int notification_tile_bg=0x7f02006b;
-        public static final int notify_panel_notification_icon_bg=0x7f02006c;
+        public static final int fondo=0x7f02005d;
+        public static final int ic_login_bk=0x7f02005e;
+        public static final int imagee=0x7f02005f;
+        public static final int inicio=0x7f020060;
+        public static final int login_button_bk=0x7f020061;
+        public static final int login_shape_bk=0x7f020062;
+        public static final int navigation_empty_icon=0x7f020063;
+        public static final int notification_action_background=0x7f020064;
+        public static final int notification_bg=0x7f020065;
+        public static final int notification_bg_low=0x7f020066;
+        public static final int notification_bg_low_normal=0x7f020067;
+        public static final int notification_bg_low_pressed=0x7f020068;
+        public static final int notification_bg_normal=0x7f020069;
+        public static final int notification_bg_normal_pressed=0x7f02006a;
+        public static final int notification_icon_background=0x7f02006b;
+        public static final int notification_template_icon_bg=0x7f02006e;
+        public static final int notification_template_icon_low_bg=0x7f02006f;
+        public static final int notification_tile_bg=0x7f02006c;
+        public static final int notify_panel_notification_icon_bg=0x7f02006d;
     }
     public static final class id {
         public static final int action0=0x7f0a0092;
@@ -3451,8 +3452,8 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f040018;
         public static final int abc_search_view=0x7f040019;
         public static final int abc_select_dialog_material=0x7f04001a;
-        public static final int activity_inicio=0x7f04001b;
-        public static final int activity_login=0x7f04001c;
+        public static final int activity_login=0x7f04001b;
+        public static final int activiy_inicio=0x7f04001c;
         public static final int design_bottom_navigation_item=0x7f04001d;
         public static final int design_bottom_sheet_dialog=0x7f04001e;
         public static final int design_layout_snackbar=0x7f04001f;
@@ -3492,10 +3493,12 @@ containing a value of this type.
         public static final int contra=0x7f030000;
         public static final int ic_launcher=0x7f030001;
         public static final int logom=0x7f030002;
-        public static final int logosin=0x7f030003;
-        public static final int mono=0x7f030004;
-        public static final int monob=0x7f030005;
-        public static final int usuamer=0x7f030006;
+        public static final int logosi=0x7f030003;
+        public static final int logosin=0x7f030004;
+        public static final int mono=0x7f030005;
+        public static final int monoa=0x7f030006;
+        public static final int monob=0x7f030007;
+        public static final int usuamer=0x7f030008;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f0c0008;
