@@ -134,7 +134,7 @@
 					android:layout_gravity="center_horizontal"
 					android:layout_marginTop="22dp"
 					android:background="@drawable/bbutton"
-					android:onClick="onclick"
+					android:onClick="onclic"
 					android:text="Iniciar Sesión"
 					android:textColor="#FFFFFF"/>
 

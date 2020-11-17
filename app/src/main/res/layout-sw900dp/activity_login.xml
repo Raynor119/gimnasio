@@ -131,7 +131,7 @@
 					android:layout_height="55dp"
 					android:layout_marginTop="60dp"
 					android:background="@drawable/bbutton"
-					android:onClick="onclick"
+					android:onClick="onclic"
 					android:text="Iniciar Sesión"
 					android:textColor="#FFFFFF"
 					android:layout_gravity="center_horizontal"/>
