@@ -1,156 +1,160 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:2:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/raynor/.gradle/caches/transforms-2/files-2.1/35b9440ab833677aa46bea771335a11f/constraint-layout-1.0.2/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:design:25.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/73bcb6306363c2bb85f40bd45bcc28c5/design-25.0.0/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:appcompat-v7:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/5ab4bfe1c37a1fb34c4b0e05ff60e219/appcompat-v7-25.2.0/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.volley:volley:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/b7386711d833305afdbbf3f056e2c67e/volley-1.1.1/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:transition:25.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a53e20b32f34337d669a19dd74e9733e/transition-25.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-v4:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/cc9192b2088b70eb9092c729a8043397/support-v4-25.2.0/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:cardview-v7:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fe2d6bb653e7e23099a537c2b559c965/cardview-v7-25.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:recyclerview-v7:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/08d64c3543065ed679cb227f43265759/recyclerview-v7-25.2.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/56491b1b65ddf83e5539d4ce2977f9a8/animated-vector-drawable-25.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a627c19cad74a6a2b20a4cddc96e7467/support-vector-drawable-25.2.0/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:support-fragment:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/53053eac01a0c73dfb32a3624f026a4f/support-fragment-25.2.0/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-media-compat:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/d89b474664150a8306e5676fd0a132d8/support-media-compat-25.2.0/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-utils:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/194d0541ef6c47e74e386623ef1f0fb5/support-core-utils-25.2.0/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-ui:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/5b60a48d46eb8a45e5703b9ba08cf474/support-core-ui-25.2.0/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-compat:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/9a25d1e3a75cee046f6b08ce58721929/support-compat-25.2.0/AndroidManifest.xml:17:1-27:12
-INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:2:1-31:12
+ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:2:1-33:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\b703eeb50455644a9f19e020c78f6a7d\constraint-layout-1.0.2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\813bc61ae7065e99e25aa712abd7bb32\design-25.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\73a37343351e762e36a6ad06dd5bfb18\appcompat-v7-25.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\8791c781ef62abac7b59ad07164cf6df\volley-1.1.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:transition:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\7a171475daeca338e9adf5eaac031539\transition-25.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\37f73cabc8507939a45c45ecc19742ec\support-v4-25.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:cardview-v7:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\ad28f13a4b7f83468195baec767d0c5e\cardview-v7-25.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\88d75a0a8ed1b2ab34b7970e69041d9e\recyclerview-v7-25.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\bf865a1127610b7419ac63a117c1b3c9\animated-vector-drawable-25.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\f0620f19cef1d9275682d71ed838bcbf\support-vector-drawable-25.2.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\db4751a4ba390f9c3747267cf6309fc0\support-fragment-25.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\88e6e719fa07fc8d7cdb810a026b7c9a\support-media-compat-25.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\0b7de804165245c8b0e0b9d2d35ca00b\support-core-utils-25.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\4565c941ad18c7f87126655807a93757\support-core-ui-25.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\43552f570234d6caa3768dd18742f4e6\support-compat-25.2.0\AndroidManifest.xml:17:1-27:12
+INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:2:1-33:12
 	package
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:3:11-40
-		INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
-		INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:3:11-40
+		INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:2:1-31:12
-		INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:2:1-33:12
+		INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:2:1-31:12
-		INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:2:1-33:12
+		INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:5:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/raynor/.gradle/caches/transforms-2/files-2.1/35b9440ab833677aa46bea771335a11f/constraint-layout-1.0.2/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/raynor/.gradle/caches/transforms-2/files-2.1/35b9440ab833677aa46bea771335a11f/constraint-layout-1.0.2/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:25.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/73bcb6306363c2bb85f40bd45bcc28c5/design-25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:design:25.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/73bcb6306363c2bb85f40bd45bcc28c5/design-25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/5ab4bfe1c37a1fb34c4b0e05ff60e219/appcompat-v7-25.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/5ab4bfe1c37a1fb34c4b0e05ff60e219/appcompat-v7-25.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.volley:volley:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/b7386711d833305afdbbf3f056e2c67e/volley-1.1.1/AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/b7386711d833305afdbbf3f056e2c67e/volley-1.1.1/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:transition:25.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a53e20b32f34337d669a19dd74e9733e/transition-25.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:transition:25.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a53e20b32f34337d669a19dd74e9733e/transition-25.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/cc9192b2088b70eb9092c729a8043397/support-v4-25.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/cc9192b2088b70eb9092c729a8043397/support-v4-25.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:cardview-v7:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fe2d6bb653e7e23099a537c2b559c965/cardview-v7-25.2.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fe2d6bb653e7e23099a537c2b559c965/cardview-v7-25.2.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/56491b1b65ddf83e5539d4ce2977f9a8/animated-vector-drawable-25.2.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/56491b1b65ddf83e5539d4ce2977f9a8/animated-vector-drawable-25.2.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a627c19cad74a6a2b20a4cddc96e7467/support-vector-drawable-25.2.0/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a627c19cad74a6a2b20a4cddc96e7467/support-vector-drawable-25.2.0/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-fragment:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/53053eac01a0c73dfb32a3624f026a4f/support-fragment-25.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/53053eac01a0c73dfb32a3624f026a4f/support-fragment-25.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/d89b474664150a8306e5676fd0a132d8/support-media-compat-25.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/d89b474664150a8306e5676fd0a132d8/support-media-compat-25.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/194d0541ef6c47e74e386623ef1f0fb5/support-core-utils-25.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/194d0541ef6c47e74e386623ef1f0fb5/support-core-utils-25.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/5b60a48d46eb8a45e5703b9ba08cf474/support-core-ui-25.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/5b60a48d46eb8a45e5703b9ba08cf474/support-core-ui-25.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/9a25d1e3a75cee046f6b08ce58721929/support-compat-25.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/9a25d1e3a75cee046f6b08ce58721929/support-compat-25.2.0/AndroidManifest.xml:25:5-20
+ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:5:5-31:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\b703eeb50455644a9f19e020c78f6a7d\constraint-layout-1.0.2\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\b703eeb50455644a9f19e020c78f6a7d\constraint-layout-1.0.2\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\813bc61ae7065e99e25aa712abd7bb32\design-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\813bc61ae7065e99e25aa712abd7bb32\design-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\73a37343351e762e36a6ad06dd5bfb18\appcompat-v7-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\73a37343351e762e36a6ad06dd5bfb18\appcompat-v7-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\8791c781ef62abac7b59ad07164cf6df\volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\8791c781ef62abac7b59ad07164cf6df\volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:transition:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\7a171475daeca338e9adf5eaac031539\transition-25.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:transition:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\7a171475daeca338e9adf5eaac031539\transition-25.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\37f73cabc8507939a45c45ecc19742ec\support-v4-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\37f73cabc8507939a45c45ecc19742ec\support-v4-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:cardview-v7:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\ad28f13a4b7f83468195baec767d0c5e\cardview-v7-25.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\ad28f13a4b7f83468195baec767d0c5e\cardview-v7-25.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\bf865a1127610b7419ac63a117c1b3c9\animated-vector-drawable-25.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\bf865a1127610b7419ac63a117c1b3c9\animated-vector-drawable-25.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\f0620f19cef1d9275682d71ed838bcbf\support-vector-drawable-25.2.0\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\f0620f19cef1d9275682d71ed838bcbf\support-vector-drawable-25.2.0\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\db4751a4ba390f9c3747267cf6309fc0\support-fragment-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\db4751a4ba390f9c3747267cf6309fc0\support-fragment-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\88e6e719fa07fc8d7cdb810a026b7c9a\support-media-compat-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\88e6e719fa07fc8d7cdb810a026b7c9a\support-media-compat-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\0b7de804165245c8b0e0b9d2d35ca00b\support-core-utils-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\0b7de804165245c8b0e0b9d2d35ca00b\support-core-utils-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\4565c941ad18c7f87126655807a93757\support-core-ui-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\4565c941ad18c7f87126655807a93757\support-core-ui-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\43552f570234d6caa3768dd18742f4e6\support-compat-25.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\43552f570234d6caa3768dd18742f4e6\support-compat-25.2.0\AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:8:13-45
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:8:13-45
 	android:resizeableActivity
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:9:13-46
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:9:13-46
 	android:icon
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:7:13-40
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:7:13-40
 	android:allowBackup
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:6:13-39
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:6:13-39
 	android:theme
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:10:13-44
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:10:13-44
 activity#com.pixels.gimnasio.cargar
-ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:11:9-12:20
+ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:11:9-14:20
+	android:supportsRtl
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:12:4-30
+	android:theme
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:13:4-47
 	android:name
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:11:19-41
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:11:19-41
 activity#com.pixels.gimnasio.MainActivity
-ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:13:9-18:20
+ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:15:9-20:20
 	android:supportsRtl
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:16:17-43
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:18:17-43
 	android:label
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:15:17-49
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:17:17-49
 	android:theme
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:17:17-60
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:19:17-60
 	android:name
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:14:17-45
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:16:17-45
 activity#com.pixels.gimnasio.inicio
-ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:19:9-28:20
+ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:21:9-30:20
 	android:supportsRtl
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:21:17-43
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:23:17-43
 	android:theme
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:22:17-60
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:24:17-60
 	android:name
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:20:17-39
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:22:17-39
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:23:13-27:29
+ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:24:17-68
+ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:26:17-68
 	android:name
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:24:25-66
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:26:17-76
+ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:28:17-76
 	android:name
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml:26:27-74
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml:28:27-74
 uses-sdk
-INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
-INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/raynor/.gradle/caches/transforms-2/files-2.1/35b9440ab833677aa46bea771335a11f/constraint-layout-1.0.2/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/raynor/.gradle/caches/transforms-2/files-2.1/35b9440ab833677aa46bea771335a11f/constraint-layout-1.0.2/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:25.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/73bcb6306363c2bb85f40bd45bcc28c5/design-25.0.0/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:25.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/73bcb6306363c2bb85f40bd45bcc28c5/design-25.0.0/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/5ab4bfe1c37a1fb34c4b0e05ff60e219/appcompat-v7-25.2.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/5ab4bfe1c37a1fb34c4b0e05ff60e219/appcompat-v7-25.2.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.volley:volley:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/b7386711d833305afdbbf3f056e2c67e/volley-1.1.1/AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/b7386711d833305afdbbf3f056e2c67e/volley-1.1.1/AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:transition:25.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a53e20b32f34337d669a19dd74e9733e/transition-25.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:25.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a53e20b32f34337d669a19dd74e9733e/transition-25.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/cc9192b2088b70eb9092c729a8043397/support-v4-25.2.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/cc9192b2088b70eb9092c729a8043397/support-v4-25.2.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:cardview-v7:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fe2d6bb653e7e23099a537c2b559c965/cardview-v7-25.2.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fe2d6bb653e7e23099a537c2b559c965/cardview-v7-25.2.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/08d64c3543065ed679cb227f43265759/recyclerview-v7-25.2.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/08d64c3543065ed679cb227f43265759/recyclerview-v7-25.2.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/56491b1b65ddf83e5539d4ce2977f9a8/animated-vector-drawable-25.2.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/56491b1b65ddf83e5539d4ce2977f9a8/animated-vector-drawable-25.2.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a627c19cad74a6a2b20a4cddc96e7467/support-vector-drawable-25.2.0/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a627c19cad74a6a2b20a4cddc96e7467/support-vector-drawable-25.2.0/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-fragment:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/53053eac01a0c73dfb32a3624f026a4f/support-fragment-25.2.0/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/53053eac01a0c73dfb32a3624f026a4f/support-fragment-25.2.0/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/d89b474664150a8306e5676fd0a132d8/support-media-compat-25.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/d89b474664150a8306e5676fd0a132d8/support-media-compat-25.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/194d0541ef6c47e74e386623ef1f0fb5/support-core-utils-25.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/194d0541ef6c47e74e386623ef1f0fb5/support-core-utils-25.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/5b60a48d46eb8a45e5703b9ba08cf474/support-core-ui-25.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/5b60a48d46eb8a45e5703b9ba08cf474/support-core-ui-25.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/9a25d1e3a75cee046f6b08ce58721929/support-compat-25.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/9a25d1e3a75cee046f6b08ce58721929/support-compat-25.2.0/AndroidManifest.xml:21:5-23:58
-INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
-INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
+INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\b703eeb50455644a9f19e020c78f6a7d\constraint-layout-1.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\b703eeb50455644a9f19e020c78f6a7d\constraint-layout-1.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\813bc61ae7065e99e25aa712abd7bb32\design-25.2.0\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\813bc61ae7065e99e25aa712abd7bb32\design-25.2.0\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\73a37343351e762e36a6ad06dd5bfb18\appcompat-v7-25.2.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\73a37343351e762e36a6ad06dd5bfb18\appcompat-v7-25.2.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\8791c781ef62abac7b59ad07164cf6df\volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\8791c781ef62abac7b59ad07164cf6df\volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:transition:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\7a171475daeca338e9adf5eaac031539\transition-25.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\7a171475daeca338e9adf5eaac031539\transition-25.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\37f73cabc8507939a45c45ecc19742ec\support-v4-25.2.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\37f73cabc8507939a45c45ecc19742ec\support-v4-25.2.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:cardview-v7:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\ad28f13a4b7f83468195baec767d0c5e\cardview-v7-25.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\ad28f13a4b7f83468195baec767d0c5e\cardview-v7-25.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\88d75a0a8ed1b2ab34b7970e69041d9e\recyclerview-v7-25.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\88d75a0a8ed1b2ab34b7970e69041d9e\recyclerview-v7-25.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\bf865a1127610b7419ac63a117c1b3c9\animated-vector-drawable-25.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\bf865a1127610b7419ac63a117c1b3c9\animated-vector-drawable-25.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\f0620f19cef1d9275682d71ed838bcbf\support-vector-drawable-25.2.0\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\f0620f19cef1d9275682d71ed838bcbf\support-vector-drawable-25.2.0\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\db4751a4ba390f9c3747267cf6309fc0\support-fragment-25.2.0\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\db4751a4ba390f9c3747267cf6309fc0\support-fragment-25.2.0\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\88e6e719fa07fc8d7cdb810a026b7c9a\support-media-compat-25.2.0\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\88e6e719fa07fc8d7cdb810a026b7c9a\support-media-compat-25.2.0\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\0b7de804165245c8b0e0b9d2d35ca00b\support-core-utils-25.2.0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\0b7de804165245c8b0e0b9d2d35ca00b\support-core-utils-25.2.0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\4565c941ad18c7f87126655807a93757\support-core-ui-25.2.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\4565c941ad18c7f87126655807a93757\support-core-ui-25.2.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\43552f570234d6caa3768dd18742f4e6\support-compat-25.2.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\43552f570234d6caa3768dd18742f4e6\support-compat-25.2.0\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/73bcb6306363c2bb85f40bd45bcc28c5/design-25.0.0/AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.2.0] C:\Users\jhann\.gradle\caches\transforms-2\files-2.1\813bc61ae7065e99e25aa712abd7bb32\design-25.2.0\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
-		INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
-		ADDED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
-		INJECTED from /sdcard/Proyecto de Modelamiento/gimnasio/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jhann\Downloads\Modelamiento\Proyecto\gimnasio\app\src\main\AndroidManifest.xml
