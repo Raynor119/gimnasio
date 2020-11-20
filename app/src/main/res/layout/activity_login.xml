@@ -16,8 +16,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
 				android:layout_alignParentTop="true"
-				android:weightSum="12"
-				android:baselineAligned="false">
+				android:weightSum="12">
 				<LinearLayout
 					style="@style/parent"
 					android:background="@drawable/login_shape_bk"
@@ -67,7 +66,7 @@
 
 						<TextView
 							style="@style/headerTextPrimary"
-							android:text="@string/iniciar_sesi_n"
+							android:text="Iniciar Sesión"
 							android:textSize="20dp"
 							android:layout_marginTop="@dimen/loginViewsMargin"/>
 
