@@ -58,7 +58,7 @@ public class cargar extends AppCompatActivity {
 						if(conr.equals(cont)){
 							basedeinicio n=new basedeinicio(getApplicationContext());
 							n.inic("1",lista.get(p).getId(),user,cont,"1");
-							Intent intent =new Intent(cargar.this,usuario.class);
+							Intent intent =new Intent(cargar.this,usuarioListActivity.class);
 							intent.putExtra("Usuario",user);		
 							intent.putExtra("Contraseña",cont);
 							intent.putExtra("Codigo",lista.get(p).getId());
@@ -115,7 +115,7 @@ public class cargar extends AppCompatActivity {
 										if(conr.equals(cont)){
 											basedeinicio n=new basedeinicio(getApplicationContext());
 											n.inic("1",lista.get(p).getId(),user,cont,"0");
-											Intent intent =new Intent(cargar.this,administrador.class);
+											Intent intent =new Intent(cargar.this,administradorListActivity.class);
 											intent.putExtra("Usuario",user);		
 											intent.putExtra("Contraseña",cont);
 											intent.putExtra("Codigo",lista.get(p).getId());

@@ -17,6 +17,38 @@
         android:resizeableActivity="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.pixels.gimnasio.administradorListActivity"
+            android:label="administrador"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.pixels.gimnasio.administradorDetailActivity"
+            android:label="@string/title_administrador_detail"
+            android:parentActivityName="com.pixels.gimnasio.administradorListActivity"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pixels.gimnasio.administradorListActivity" />
+        </activity>
+        <activity
+            android:name="com.pixels.gimnasio.usuarioListActivity"
+            android:label="Usuario"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.pixels.gimnasio.usuarioDetailActivity"
+            android:label="@string/title_usuario_detail"
+            android:parentActivityName="com.pixels.gimnasio.usuarioListActivity"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pixels.gimnasio.usuarioListActivity" />
+        </activity>
+        <activity
             android:name="com.pixels.gimnasio.cargar"
             android:supportsRtl="true"
             android:theme="@style/AppTheme.NoActionBar" >
@@ -37,14 +69,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.pixels.gimnasio.usuario"
-            android:label="Usuario"
-            android:supportsRtl="true" />
-        <activity
-            android:name="com.pixels.gimnasio.administrador"
-            android:label="Administrador"
-            android:supportsRtl="true" />
     </application>
 
 </manifest>

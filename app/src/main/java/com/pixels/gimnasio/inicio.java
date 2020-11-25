@@ -46,7 +46,7 @@ public class inicio extends AppCompatActivity
 							}else{
 								if(usurr.get(0).getTipo().equals("0")){
 									//administrador
-									intent =new Intent(inicio.this,administrador.class);
+									intent =new Intent(inicio.this,administradorListActivity.class);
 									intent.putExtra("Usuario",usurr.get(0).getUsuario());		
 									intent.putExtra("Contraseña",usurr.get(0).getContraseña());
 									intent.putExtra("Codigo",usurr.get(0).getCodigo());
@@ -54,7 +54,7 @@ public class inicio extends AppCompatActivity
 									finish();
 								}else{
 									//usuario
-									intent =new Intent(inicio.this,usuario.class);
+									intent =new Intent(inicio.this,usuarioListActivity.class);
 									intent.putExtra("Usuario",usurr.get(0).getUsuario());		
 									intent.putExtra("Contraseña",usurr.get(0).getContraseña());
 									intent.putExtra("Codigo",usurr.get(0).getCodigo());
