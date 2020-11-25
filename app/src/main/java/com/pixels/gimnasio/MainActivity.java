@@ -1,14 +1,15 @@
 package com.pixels.gimnasio;
 
-import android.app.*;
 import android.content.Intent;
-import android.os.*;
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 {
+	public static int deci=0;
     EditText email,conta;
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -19,7 +20,20 @@ public class MainActivity extends AppCompatActivity
         conta=(EditText) findViewById(R.id.editTextPassword);
     }
     public void onclic(View view){
+		
+		String usr=String.valueOf(email.getText().toString());
+		String cont=String.valueOf(conta.getText().toString());						
+		if(usr.equals("")||cont.equals("")){			
+			Toast.makeText(getApplicationContext(), "Digite el Usuario o Contraseña",Toast.LENGTH_LONG).show();	
+		}		
+		else{
+		
         Intent intent =new Intent(MainActivity.this,cargar.class);
-        startActivity(intent);
+		intent.putExtra("Usuario",usr);		
+		intent.putExtra("Contraseña",cont);
+		startActivity(intent);
+		finish();
+		
+		}
     }
 }

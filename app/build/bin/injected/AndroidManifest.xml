@@ -7,7 +7,10 @@
 
 	<uses-sdk
 		android:minSdkVersion="14"
-		android:targetSdkVersion="29"/>
+		android:targetSdkVersion="27"/>
+
+	<uses-permission
+		android:name="android.permission.INTERNET"/>
 
 	<application
 		android:allowBackup="true"
@@ -47,6 +50,16 @@
 			</intent-filter>
 
 		</activity>
+
+		<activity
+			android:name=".usuario"
+			android:label="Usuario"
+			android:supportsRtl="true"/>
+
+		<activity
+			android:name=".administrador"
+			android:label="Administrador"
+			android:supportsRtl="true"/>
 
 	</application>
 

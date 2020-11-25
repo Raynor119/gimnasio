@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.pixels.gimnasio">
 
+		  
+	<uses-permission android:name="android.permission.INTERNET" />
+		  
+		  
     <application
             android:allowBackup="true"
             android:icon="@mipmap/mono"
@@ -28,6 +32,14 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+		<activity
+			android:name=".usuario"
+			android:label="Usuario"
+			android:supportsRtl="true"/>
+		<activity
+			android:name=".administrador"
+			android:label="Administrador"
+			android:supportsRtl="true"/>
     </application>
 
 </manifest>

@@ -6,7 +6,9 @@
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="29" />
+        android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -35,6 +37,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.pixels.gimnasio.usuario"
+            android:label="Usuario"
+            android:supportsRtl="true" />
+        <activity
+            android:name="com.pixels.gimnasio.administrador"
+            android:label="Administrador"
+            android:supportsRtl="true" />
     </application>
 
 </manifest>
