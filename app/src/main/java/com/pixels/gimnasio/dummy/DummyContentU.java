@@ -11,7 +11,7 @@ import java.util.Map;
  * <p>
  * TODO: Replace all uses of this class before publishing your app.
  */
-public class DummyContent {
+public class DummyContentU {
 
     /**
      * An array of sample (dummy) items.
@@ -21,20 +21,25 @@ public class DummyContent {
     /**
      * A map of sample (dummy) items, by ID.
      */
-    public static final Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
+    //public static final Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
 
-    private static final int COUNT = 25;
+    private static final int COUNT = 4;
 
     static {
         // Add some sample items.
         for (int i = 1; i <= COUNT; i++) {
             addItem(createDummyItem(i));
         }
+		ITEMS.get(0).setContent("Rutinas");
+		ITEMS.get(1).setContent("Realizar el Pago");
+		ITEMS.get(2).setContent("Datos Personales");
+		ITEMS.get(3).setContent("Cerrar sesion");
+	
     }
 
     private static void addItem(DummyItem item) {
         ITEMS.add(item);
-        ITEM_MAP.put(item.id, item);
+		// ITEM_MAP.put(item.id, item);
     }
 
     private static DummyItem createDummyItem(int position) {
@@ -54,15 +59,19 @@ public class DummyContent {
      * A dummy item representing a piece of content.
      */
     public static class DummyItem {
-        public final String id;
-        public final String content;
-        public final String details;
+        public  String id;
+        public  String content;
+        public  String details;
 
         public DummyItem(String id, String content, String details) {
             this.id = id;
             this.content = content;
             this.details = details;
         }
+
+		public void setContent(String content1){
+			content=content1;
+		}
 
         @Override
         public String toString() {

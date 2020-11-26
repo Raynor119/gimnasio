@@ -3,6 +3,9 @@
           package="com.pixels.gimnasio">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-configuration android:reqTouchScreen="finger" />
+	<uses-feature android:name="android.hardware.touchscreen" android:required="true" />
+	
 
     <application
             android:allowBackup="true"
@@ -12,7 +15,7 @@
             android:theme="@style/AppTheme">
         <activity
                 android:name=".administradorListActivity"
-                android:label="administrador"
+                android:label="Administrador"
 			android:supportsRtl="true"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>

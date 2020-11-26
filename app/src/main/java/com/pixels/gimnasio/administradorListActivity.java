@@ -4,19 +4,21 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import com.pixels.gimnasio.dummy.DummyContent;
-
+import android.widget.Toast;
+import com.pixels.gimnasio.dummy.DummyContentA;
 import java.util.List;
+import android.widget.Button;
+import android.support.v7.widget.CardView;
+import android.widget.ImageView;
 
 /**
  * An activity representing a list of administradores. This activity
@@ -39,9 +41,9 @@ public class administradorListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_administrador_list);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        toolbar.setTitle(getTitle());
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
+        //toolbar.setTitle(getTitle());
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -66,21 +68,23 @@ public class administradorListActivity extends AppCompatActivity {
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, DummyContent.ITEMS, mTwoPane));
+        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, DummyContentA.ITEMS, mTwoPane));
     }
 
     public static class SimpleItemRecyclerViewAdapter
             extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder> {
 
         private final administradorListActivity mParentActivity;
-        private final List<DummyContent.DummyItem> mValues;
+        private final List<DummyContentA.DummyItem> mValues;
         private final boolean mTwoPane;
         private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DummyContent.DummyItem item = (DummyContent.DummyItem) view.getTag();
+                DummyContentA.DummyItem item = (DummyContentA.DummyItem) view.getTag();
                 if (mTwoPane) {
                     Bundle arguments = new Bundle();
+					Context context = view.getContext();
+					
                     arguments.putString(administradorDetailFragment.ARG_ITEM_ID, item.id);
                     administradorDetailFragment fragment = new administradorDetailFragment();
                     fragment.setArguments(arguments);
@@ -98,7 +102,7 @@ public class administradorListActivity extends AppCompatActivity {
         };
 
         SimpleItemRecyclerViewAdapter(administradorListActivity parent,
-                                      List<DummyContent.DummyItem> items,
+                                      List<DummyContentA.DummyItem> items,
                                       boolean twoPane) {
             mValues = items;
             mParentActivity = parent;
@@ -114,9 +118,23 @@ public class administradorListActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
-            holder.mIdView.setText(mValues.get(position).id);
+           // holder.mIdView.setText(mValues.get(position).id);
             holder.mContentView.setText(mValues.get(position).content);
-
+			if(mValues.get(position).id.equals("1")){
+				holder.imagen.setImageResource(R.drawable.ruti);
+			}
+			if(mValues.get(position).id.equals("2")){
+				holder.imagen.setImageResource(R.drawable.usi);
+			}
+			if(mValues.get(position).id.equals("3")){
+				holder.imagen.setImageResource(R.drawable.pago);
+			}
+			if(mValues.get(position).id.equals("5")){
+				holder.imagen.setImageResource(R.drawable.precio);
+			}
+			if(mValues.get(position).id.equals("6")){
+				holder.imagen.setImageResource(R.drawable.cera);
+			}
             holder.itemView.setTag(mValues.get(position));
             holder.itemView.setOnClickListener(mOnClickListener);
         }
@@ -127,12 +145,14 @@ public class administradorListActivity extends AppCompatActivity {
         }
 
         class ViewHolder extends RecyclerView.ViewHolder {
-            final TextView mIdView;
+          //  final TextView mIdView;
             final TextView mContentView;
+			final ImageView imagen;
 
             ViewHolder(View view) {
                 super(view);
-                mIdView = (TextView) view.findViewById(R.id.id_text);
+               // mIdView = (TextView) view.findViewById(R.id.id_text);
+				imagen=(ImageView) view.findViewById(R.id.image);
                 mContentView = (TextView) view.findViewById(R.id.content);
             }
         }
