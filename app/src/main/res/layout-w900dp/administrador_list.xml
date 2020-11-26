@@ -15,17 +15,60 @@
 	<LinearLayout
 		android:layout_width="@dimen/item_width"
 		android:layout_height="match_parent"
-		>
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="@dimen/item_width"
+			android:layout_height="120dp"
+			android:background="@color/colorPrimary"
+			android:orientation="horizontal"
+			android:gravity="center_vertical">
+			<ImageView
+				android:id="@+id/image"
+				android:layout_height="80dp"
+				android:layout_width="80dp"
+
+				android:src="@drawable/admin"
+				android:layout_marginLeft="25dp"/>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:gravity="center_vertical">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Administrador"
+				android:textSize="20sp"
+				android:layout_marginLeft="5dp"
+				android:textColor="#FFFFFF"/>
+				<TextView
+					android:id="@+id/username"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="raynor9029"
+					android:textSize="14sp"
+					android:layout_marginLeft="5dp"
+					android:textColor="#FFFFFF"/>
+			</LinearLayout>
+
+		</LinearLayout>
 
 		<android.support.v7.widget.RecyclerView
 			xmlns:tools="http://schemas.android.com/tools"
 			android:id="@+id/administrador_list"
 			android:name="com.pixels.gimnasio.administradorListFragment"
 			android:layout_width="@dimen/item_width"
-			android:layout_height="match_parent"
+			android:layout_height="wrap_content"
 			app:layoutManager="LinearLayoutManager"
 			tools:context="com.pixels.gimnasio.administradorListActivity"
 			tools:listitem="@layout/administrador_list_content"/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#FFFFFF"
+			android:gravity="center_vertical"/>
 
 	</LinearLayout>
 

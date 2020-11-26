@@ -10,7 +10,7 @@
 	android:state_hovered="true"
 	card_view:cardBackgroundColor="@android:color/transparent"
 	android:layout_height="wrap_content"
-	card_view:cardCornerRadius="5dp"
+	card_view:cardCornerRadius="3dp"
 	android:layout_marginRight="1dp">
 
 	<LinearLayout
@@ -23,15 +23,17 @@
 			android:id="@+id/image"
 			android:layout_height="40dp"
 			android:layout_width="40dp"
+			
 			android:src="@drawable/descu"
-			android:layout_marginLeft="10dp"/>
+			android:layout_marginLeft="25dp"/>
 
 		<TextView
 			android:id="@+id/content"
 			android:layout_width="wrap_content"
-			android:textSize="21sp"
+			android:textSize="18sp"
 			android:state_hovered="true"
 			android:layout_height="wrap_content"
+			android:textColor="#000000"
 			android:text="Item"
 			android:layout_marginTop="20dp"
 			android:layout_marginBottom="20dp"
