@@ -1,43 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
+	android:orientation="vertical"
 	android:fitsSystemWindows="true"
-	tools:context=".administradorListActivity">
+	style="@style/loginParent">
 
-	<android.support.design.widget.AppBarLayout
-		android:id="@+id/app_bar"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:theme="@style/AppTheme.AppBarOverlay">
-
-		
-	</android.support.design.widget.AppBarLayout>
-
-	<FrameLayout
-		android:id="@+id/frameLayout"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-		<include
-			layout="@layout/administrador_list"/>
-
-		
-
-	</FrameLayout>
 	
 
-	<android.support.design.widget.FloatingActionButton
-		android:id="@+id/fab"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_gravity="bottom|end"
-		android:layout_margin="@dimen/fab_margin"
-		app:srcCompat="@android:drawable/ic_dialog_email"/>
+		<RelativeLayout
+			style="@style/parent">
 
-</android.support.design.widget.CoordinatorLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_alignParentTop="true"
+				android:weightSum="12">
+				<LinearLayout
+					style="@style/parent"
+					android:background="@drawable/admishape"
+					android:orientation="vertical"
+					android:layout_weight="3">
+
+					<ImageView
+						style="@style/parent"
+						android:background="@drawable/ic_login_bk"
+						android:contentDescription="login background"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_alignParentTop="true"
+				android:orientation="vertical"
+				android:layout_marginTop="40dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginLeft="5dp">
+
+				<TextView
+					style="@style/headerText"
+					android:layout_gravity="center"
+					android:layout_marginTop="40dp"
+					android:text="Administrador"
+					android:layout_marginLeft="10dp"
+					android:textSize="26dp" />
+
+				<android.support.v7.widget.CardView
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					xmlns:app="http://schemas.android.com/apk/res-auto"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					app:cardCornerRadius="10dp"
+					
+					android:layout_gravity="center"
+					android:layout_marginTop="@dimen/loginViewsMargin"
+					
+					android:background="@color/whiteCardColor">
+
+					<FrameLayout
+						android:id="@+id/frameLayout"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						app:layout_behavior="@string/appbar_scrolling_view_behavior"> 
+
+						<android.support.v7.widget.RecyclerView
+							xmlns:android="http://schemas.android.com/apk/res/android"
+							xmlns:app="http://schemas.android.com/apk/res-auto"
+							xmlns:tools="http://schemas.android.com/tools"
+							android:layout_marginTop="20dp"
+							android:layout_marginRight="9dp"
+							android:layout_marginLeft="9dp"
+							android:id="@+id/administrador_list"
+							android:name="com.pixels.gimnasio.administradorListFragment"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							app:layoutManager="LinearLayoutManager"
+							tools:context=".administradorListActivity"
+							tools:listitem="@layout/administrador_list_content"/>
+
+
+					</FrameLayout>
+
+
+					<android.support.design.widget.FloatingActionButton
+						android:id="@+id/fab"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="bottom|end"
+						android:layout_margin="@dimen/fab_margin"
+						app:srcCompat="@drawable/botona"/>
+
+
+				</android.support.v7.widget.CardView>
+				
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	
+
+</RelativeLayout>
 

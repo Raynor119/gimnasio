@@ -66,6 +66,7 @@
 							android:inputType="textEmailAddress"
 							android:maxLines="1"
 							android:textColor="#FFFFFF"
+							android:textColorHint="#FFFFFF"
 							android:layout_height="45dp"
 							android:hint="Usuario"/>
 
@@ -98,6 +99,7 @@
 							android:hint="Contraseña"
 							android:maxLines="1"
 							android:textColor="#FFFFFF"
+							android:textColorHint="#FFFFFF"
 							android:layout_height="45dp"
 							android:inputType="textPassword"/>
 

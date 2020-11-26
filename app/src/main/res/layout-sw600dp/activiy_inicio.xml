@@ -17,7 +17,7 @@
 
 		<ImageView
 			android:layout_width="match_parent"
-			android:src="@mipmap/logosin"
+			android:src="@mipmap/mono"
 			android:layout_height="match_parent"/>
 
 	</android.support.v7.widget.CardView>
