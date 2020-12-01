@@ -4,18 +4,17 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.pixels.gimnasio.dummy.DummyContentU;
-
 import java.util.List;
 
 /**
@@ -33,15 +32,21 @@ public class usuarioListActivity extends AppCompatActivity {
      * device.
      */
     private boolean mTwoPane;
-
+	String user,cont,cod;
+	TextView usern;
+	
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usuario_list);
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        toolbar.setTitle(getTitle());
+		Bundle extra = getIntent().getExtras();	
+		user=extra.getString("Usuario");		
+		cont=extra.getString("Contraseña");		
+		cod=extra.getString("Codigo");
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
+        //toolbar.setTitle(getTitle());
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +63,8 @@ public class usuarioListActivity extends AppCompatActivity {
             // If this view is present, then the
             // activity should be in two-pane mode.
             mTwoPane = true;
+			usern=(TextView) findViewById(R.id.username);
+			usern.setText(user);
         }
 
         View recyclerView = findViewById(R.id.usuario_list);
@@ -69,7 +76,7 @@ public class usuarioListActivity extends AppCompatActivity {
         recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, DummyContentU.ITEMS, mTwoPane));
     }
 
-    public static class SimpleItemRecyclerViewAdapter
+    public class SimpleItemRecyclerViewAdapter
             extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder> {
 
         private final usuarioListActivity mParentActivity;
@@ -81,18 +88,63 @@ public class usuarioListActivity extends AppCompatActivity {
                 DummyContentU.DummyItem item = (DummyContentU.DummyItem) view.getTag();
                 if (mTwoPane) {
                     Bundle arguments = new Bundle();
-                    arguments.putString(usuarioDetailFragment.ARG_ITEM_ID, item.id);
-                    usuarioDetailFragment fragment = new usuarioDetailFragment();
-                    fragment.setArguments(arguments);
-                    mParentActivity.getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.usuario_detail_container, fragment)
-                            .commit();
-                } else {
-                    Context context = view.getContext();
-                    Intent intent = new Intent(context, usuarioDetailActivity.class);
-                    intent.putExtra(usuarioDetailFragment.ARG_ITEM_ID, item.id);
+					
+					
+					
+					if( item.id.equals("4")){
+						basedeinicio n=new basedeinicio(getApplicationContext());
+						n.inic("1","nada","nada","nada","nada");
+						Intent intent = new Intent(usuarioListActivity.this, MainActivity.class);
+						startActivity(intent);
 
-                    context.startActivity(intent);
+						finish();
+					}
+					if(item.id.equals("1")){
+						Context context = view.getContext();
+						Intent intent = new Intent(context, rutiusuariof.class);
+						intent.putExtra("codigo",cod);
+						context.startActivity(intent);
+					}
+					
+					
+					
+					
+					
+					
+					
+                  //  arguments.putString(usuarioDetailFragment.ARG_ITEM_ID, item.id);
+                   // usuarioDetailFragment fragment = new usuarioDetailFragment();
+                   // fragment.setArguments(arguments);
+                   // mParentActivity.getSupportFragmentManager().beginTransaction()
+                    //        .replace(R.id.usuario_detail_container, fragment)
+                     //       .commit();
+                } else {
+					
+					if( item.id.equals("4")){
+
+						basedeinicio n=new basedeinicio(getApplicationContext());
+						n.inic("1","nada","nada","nada","nada");
+						Intent intent = new Intent(usuarioListActivity.this, MainActivity.class);
+						startActivity(intent);
+
+						finish();
+
+					}
+					if(item.id.equals("1")){
+						Context context = view.getContext();
+						Intent intent = new Intent(context, rutiusuariof.class);
+						intent.putExtra("codigo",cod);
+						context.startActivity(intent);
+					}
+					
+					
+					
+					
+                    //Context context = view.getContext();
+                    //Intent intent = new Intent(context, usuarioDetailActivity.class);
+                    //intent.putExtra(usuarioDetailFragment.ARG_ITEM_ID, item.id);
+
+//                    context.startActivity(intent);
                 }
             }
         };
@@ -114,9 +166,21 @@ public class usuarioListActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
-            holder.mIdView.setText(mValues.get(position).id);
+           // holder.mIdView.setText(mValues.get(position).id);
             holder.mContentView.setText(mValues.get(position).content);
-
+			if(mValues.get(position).id.equals("1")){
+				holder.imagen.setImageResource(R.drawable.rutii);
+			}
+			if(mValues.get(position).id.equals("2")){
+				holder.imagen.setImageResource(R.drawable.realipago);
+			}
+			if(mValues.get(position).id.equals("3")){
+				holder.imagen.setImageResource(R.drawable.darosp);
+			}
+			if(mValues.get(position).id.equals("4")){
+				holder.imagen.setImageResource(R.drawable.cera);
+			}
+			
             holder.itemView.setTag(mValues.get(position));
             holder.itemView.setOnClickListener(mOnClickListener);
         }
@@ -127,12 +191,15 @@ public class usuarioListActivity extends AppCompatActivity {
         }
 
         class ViewHolder extends RecyclerView.ViewHolder {
-            final TextView mIdView;
+           // final TextView mIdView;
             final TextView mContentView;
+			final ImageView imagen;
+			
 
             ViewHolder(View view) {
                 super(view);
-                mIdView = (TextView) view.findViewById(R.id.id_text);
+				imagen=(ImageView) view.findViewById(R.id.image);
+               // mIdView = (TextView) view.findViewById(R.id.id_text);
                 mContentView = (TextView) view.findViewById(R.id.content);
             }
         }

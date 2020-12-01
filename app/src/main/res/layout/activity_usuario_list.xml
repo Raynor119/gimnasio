@@ -1,41 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                 xmlns:tools="http://schemas.android.com/tools"
-                                                 android:layout_width="match_parent"
-                                                 android:layout_height="match_parent"
-                                                 android:fitsSystemWindows="true"
-                                                 tools:context=".usuarioListActivity">
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:fitsSystemWindows="true"
+	style="@style/loginParent">
 
-    <android.support.design.widget.AppBarLayout
-            android:id="@+id/app_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
-    </android.support.design.widget.AppBarLayout>
+	<RelativeLayout
+		style="@style/parent">
 
-    <FrameLayout
-            android:id="@+id/frameLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_alignParentTop="true"
+			android:weightSum="12">
+			<LinearLayout
+				style="@style/parent"
+				android:background="@drawable/admishape"
+				android:orientation="vertical"
+				android:layout_weight="3">
 
-        <include layout="@layout/usuario_list"/>
-    </FrameLayout>
+				<ImageView
+					style="@style/parent"
+					android:background="@drawable/ic_login_bk"
+					android:contentDescription="login background"/>
 
-    <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="@dimen/fab_margin"
-            app:srcCompat="@android:drawable/ic_dialog_email"/>
+			</LinearLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_alignParentTop="true"
+			android:orientation="vertical"
+			android:layout_marginTop="40dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginLeft="5dp">
+				
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:orientation="horizontal"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="30dp">
+				
+			<TextView
+				style="@style/headerText"
+				android:layout_gravity="center"
+				
+				android:text="Usuario"
+				android:textSize="29dp" />
+			
+			
+			</LinearLayout>
+			<android.support.v7.widget.CardView
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				app:cardCornerRadius="10dp"
+
+				android:layout_gravity="center"
+				android:layout_marginTop="@dimen/loginViewsMargin"
+
+				android:background="@color/whiteCardColor">
+
+				<FrameLayout
+					android:id="@+id/frameLayout"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					app:layout_behavior="@string/appbar_scrolling_view_behavior"> 
+
+					<android.support.v7.widget.RecyclerView
+						xmlns:android="http://schemas.android.com/apk/res/android"
+						xmlns:app="http://schemas.android.com/apk/res-auto"
+						xmlns:tools="http://schemas.android.com/tools"
+						android:layout_marginTop="20dp"
+						android:layout_marginRight="9dp"
+						android:layout_marginLeft="9dp"
+						android:state_hovered="true"
+						app:layoutManager="LinearLayoutManager"
+						tools:context=".usuarioListActivity"
+						tools:listitem="@layout/usuario_list_content"
+						android:id="@+id/usuario_list"
+						android:name="com.pixels.gimnasio.usuarioListFragment"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+
+				</FrameLayout>
+
+
+				<android.support.design.widget.FloatingActionButton
+					android:id="@+id/fab"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom|end"
+					android:layout_margin="@dimen/fab_margin"
+					app:srcCompat="@drawable/inig"/>
+
+
+			</android.support.v7.widget.CardView>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+
+
+</RelativeLayout>
+

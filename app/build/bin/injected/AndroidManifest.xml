@@ -23,8 +23,21 @@
 		android:allowBackup="true"
 		android:icon="@mipmap/mono"
 		android:label="@string/app_name"
+		android:state_hovered="true"
 		android:resizeableActivity="true"
 		android:theme="@style/AppTheme">
+
+		<activity
+			android:name=".rutiusuariof"
+			android:supportsRtl="true"
+			android:theme="@style/AppTheme.NoActionBar"/>
+
+		<activity
+			android:name=".usuariosdetailactivity"
+			android:supportsRtl="true"
+			android:theme="@style/AppTheme.NoActionBar">
+
+		</activity>
 
 		<activity
 			android:name=".administradorListActivity"
@@ -38,12 +51,7 @@
 			android:name=".administradorDetailActivity"
 			android:supportsRtl="true"
 			android:label="@string/title_administrador_detail"
-			android:parentActivityName=".administradorListActivity"
 			android:theme="@style/AppTheme.NoActionBar">
-
-			<meta-data
-				android:name="android.support.PARENT_ACTIVITY"
-				android:value="com.pixels.gimnasio.administradorListActivity"/>
 
 		</activity>
 
@@ -59,12 +67,7 @@
 			android:name=".usuarioDetailActivity"
 			android:label="@string/title_usuario_detail"
 			android:supportsRtl="true"
-			android:parentActivityName=".usuarioListActivity"
 			android:theme="@style/AppTheme.NoActionBar">
-
-			<meta-data
-				android:name="android.support.PARENT_ACTIVITY"
-				android:value="com.pixels.gimnasio.usuarioListActivity"/>
 
 		</activity>
 

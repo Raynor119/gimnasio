@@ -35,11 +35,17 @@ public class administradorListActivity extends AppCompatActivity {
      * device.
      */
     private boolean mTwoPane;
-
+	String user,cont,cod;
+	TextView usern;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_administrador_list);
+		Bundle extra = getIntent().getExtras();		
+		user=extra.getString("Usuario");		
+		cont=extra.getString("Contraseña");		
+		cod=extra.getString("Codigo");
+		
 
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
@@ -60,6 +66,17 @@ public class administradorListActivity extends AppCompatActivity {
             // If this view is present, then the
             // activity should be in two-pane mode.
             mTwoPane = true;
+			usern=(TextView) findViewById(R.id.username);
+			usern.setText(user);
+			Bundle arguments = new Bundle();
+			arguments.putString(administradorDetailFragment.ARG_ITEM_ID, "1");
+			administradorDetailFragment fragment = new administradorDetailFragment();
+			fragment.setArguments(arguments);
+			this.getSupportFragmentManager().beginTransaction()
+				.replace(R.id.administrador_detail_container, fragment)
+				.commit();
+			
+			
         }
 
         View recyclerView = findViewById(R.id.administrador_list);
@@ -71,12 +88,13 @@ public class administradorListActivity extends AppCompatActivity {
         recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, DummyContentA.ITEMS, mTwoPane));
     }
 
-    public static class SimpleItemRecyclerViewAdapter
+    public  class SimpleItemRecyclerViewAdapter
             extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder> {
 
         private final administradorListActivity mParentActivity;
         private final List<DummyContentA.DummyItem> mValues;
         private final boolean mTwoPane;
+		
         private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -85,21 +103,60 @@ public class administradorListActivity extends AppCompatActivity {
                     Bundle arguments = new Bundle();
 					Context context = view.getContext();
 					
-                    arguments.putString(administradorDetailFragment.ARG_ITEM_ID, item.id);
-                    administradorDetailFragment fragment = new administradorDetailFragment();
-                    fragment.setArguments(arguments);
-                    mParentActivity.getSupportFragmentManager().beginTransaction()
+					if( item.id.equals("6")){
+						basedeinicio n=new basedeinicio(getApplicationContext());
+						n.inic("1","nada","nada","nada","nada");
+						Intent intent = new Intent(administradorListActivity.this, MainActivity.class);
+						startActivity(intent);
+					
+						finish();
+					}
+					if(item.id.equals("1")){
+						arguments.putString(administradorDetailFragment.ARG_ITEM_ID, item.id);
+						administradorDetailFragment fragment = new administradorDetailFragment();
+						fragment.setArguments(arguments);
+						mParentActivity.getSupportFragmentManager().beginTransaction()
                             .replace(R.id.administrador_detail_container, fragment)
                             .commit();
+					}
+					if(item.id.equals("2")){
+						arguments.putString(usuariosdetailfragment.ARG_ITEM_ID, item.id);
+						usuariosdetailfragment fragment = new usuariosdetailfragment();
+						fragment.setArguments(arguments);
+						mParentActivity.getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.administrador_detail_container, fragment)
+                            .commit();
+					}
+					
+                    
                 } else {
-                    Context context = view.getContext();
-                    Intent intent = new Intent(context, administradorDetailActivity.class);
-                    intent.putExtra(administradorDetailFragment.ARG_ITEM_ID, item.id);
+					if( item.id.equals("6")){
+                    
+						basedeinicio n=new basedeinicio(getApplicationContext());
+						n.inic("1","nada","nada","nada","nada");
+						Intent intent = new Intent(administradorListActivity.this, MainActivity.class);
+						startActivity(intent);
 
-                    context.startActivity(intent);
+						finish();
+                    
+					}
+					if(item.id.equals("1")){
+						Context context = view.getContext();
+						Intent intent = new Intent(context, administradorDetailActivity.class);
+						intent.putExtra(administradorDetailFragment.ARG_ITEM_ID, item.id);
+						context.startActivity(intent);
+					}
+					if(item.id.equals("2")){
+						Context context = view.getContext();
+						Intent intent = new Intent(context,  usuariosdetailactivity.class);
+						intent.putExtra(usuariosdetailfragment.ARG_ITEM_ID, item.id);
+						context.startActivity(intent);
+					}
                 }
             }
         };
+		
+		
 
         SimpleItemRecyclerViewAdapter(administradorListActivity parent,
                                       List<DummyContentA.DummyItem> items,
