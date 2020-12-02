@@ -36,6 +36,7 @@ public class administradorListActivity extends AppCompatActivity {
      */
     private boolean mTwoPane;
 	String user,cont,cod;
+	
 	TextView usern;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,13 +70,13 @@ public class administradorListActivity extends AppCompatActivity {
 			usern=(TextView) findViewById(R.id.username);
 			usern.setText(user);
 			Bundle arguments = new Bundle();
-			arguments.putString(administradorDetailFragment.ARG_ITEM_ID, "1");
+			
+			arguments.putString(administradorDetailFragment.ARG_ITEM_ID,"1");
 			administradorDetailFragment fragment = new administradorDetailFragment();
 			fragment.setArguments(arguments);
 			this.getSupportFragmentManager().beginTransaction()
 				.replace(R.id.administrador_detail_container, fragment)
 				.commit();
-			
 			
         }
 

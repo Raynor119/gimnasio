@@ -38,7 +38,7 @@ public class inicio extends AppCompatActivity
 							List<usa> usurr=new ArrayList<>();
 							usurr=ne.obtusur();
 							String usu=usurr.get(0).getUsuario();
-							System.out.println("usuario: "+usu);
+							
 							if(usu.equals("nada")){
 							intent = new Intent(inicio.this, MainActivity.class); 		
 							startActivity(intent); 
@@ -51,6 +51,7 @@ public class inicio extends AppCompatActivity
 									intent.putExtra("Contraseña",usurr.get(0).getContraseña());
 									intent.putExtra("Codigo",usurr.get(0).getCodigo());
 									startActivity(intent);
+									
 									finish();
 								}else{
 									//usuario

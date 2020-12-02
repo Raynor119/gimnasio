@@ -17,9 +17,14 @@
 		
 		
 		<activity
+			android:name=".agregarusu"
+			android:supportsRtl="true"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
 			android:name=".rutiusuariof"
 			android:supportsRtl="true"
 			android:theme="@style/AppTheme.NoActionBar"/>
+		
 		<activity
 			android:name=".usuariosdetailactivity"
 			android:supportsRtl="true"
