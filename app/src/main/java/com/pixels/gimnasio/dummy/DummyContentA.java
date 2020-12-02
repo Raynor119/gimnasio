@@ -34,7 +34,7 @@ public class DummyContentA {
 		ITEMS.get(1).setContent("Usuarios");
 		ITEMS.get(2).setContent("Pagos Realizados");
 		ITEMS.get(3).setContent("Descuentos");
-		ITEMS.get(4).setContent("Precios");
+		ITEMS.get(4).setContent("Servicios");
 		ITEMS.get(5).setContent("Cerrar sesion");
     }
 

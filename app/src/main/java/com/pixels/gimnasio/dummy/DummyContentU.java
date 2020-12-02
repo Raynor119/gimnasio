@@ -31,7 +31,7 @@ public class DummyContentU {
             addItem(createDummyItem(i));
         }
 		ITEMS.get(0).setContent("Rutinas");
-		ITEMS.get(1).setContent("Realizar el Pago");
+		ITEMS.get(1).setContent("Pagar Servicios");
 		ITEMS.get(2).setContent("Datos Personales");
 		ITEMS.get(3).setContent("Cerrar sesion");
 	
