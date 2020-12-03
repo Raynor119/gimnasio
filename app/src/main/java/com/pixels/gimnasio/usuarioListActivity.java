@@ -101,7 +101,7 @@ public class usuarioListActivity extends AppCompatActivity {
 					}
 					if(item.id.equals("1")){
 						Context context = view.getContext();
-						Intent intent = new Intent(context, rutiusuariof.class);
+						Intent intent = new Intent(context, ruiusu.class);
 						intent.putExtra("codigo",cod);
 						context.startActivity(intent);
 					}
@@ -132,7 +132,7 @@ public class usuarioListActivity extends AppCompatActivity {
 					}
 					if(item.id.equals("1")){
 						Context context = view.getContext();
-						Intent intent = new Intent(context, rutiusuariof.class);
+						Intent intent = new Intent(context, ruiusu.class);
 						intent.putExtra("codigo",cod);
 						context.startActivity(intent);
 					}

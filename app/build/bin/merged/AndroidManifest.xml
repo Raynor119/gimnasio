@@ -24,6 +24,14 @@
         android:state_hovered="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.pixels.gimnasio.CronometroActivity"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.pixels.gimnasio.ruiusu"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name="com.pixels.gimnasio.agregarusu"
             android:supportsRtl="true"
             android:theme="@style/AppTheme.NoActionBar" />

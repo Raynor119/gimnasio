@@ -28,6 +28,16 @@
 		android:theme="@style/AppTheme">
 
 		<activity
+			android:name=".CronometroActivity"
+			android:supportsRtl="true"
+			android:theme="@style/AppTheme.NoActionBar"/>
+
+		<activity
+			android:name=".ruiusu"
+			android:supportsRtl="true"
+			android:theme="@style/AppTheme.NoActionBar"/>
+
+		<activity
 			android:name=".agregarusu"
 			android:supportsRtl="true"
 			android:theme="@style/AppTheme.NoActionBar"/>

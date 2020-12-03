@@ -25,6 +25,7 @@ public class administradorDetailFragment extends Fragment {
      */
     public static final String ARG_ITEM_ID = "item_id";
 	List<usu> vs = new ArrayList<>();
+	RecyclerView recyclerView1;
     /**
      * The dummy content this fragment is presenting.
      */
@@ -63,11 +64,11 @@ public class administradorDetailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.administrador_detail, container, false);
-		final RecyclerView recyclerView1 = rootView.findViewById(R.id.listusu);
+		 recyclerView1 = rootView.findViewById(R.id.listusu);
 		assert recyclerView1 != null;
         ip i=new ip();		
 		String ip=i.ip();		
-		String Url="http://"+ip+"/usua.php";
+		String Url="http://"+ip+"/usuaa.php";
 		
 		
 		JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Url, new Response.Listener<JSONArray>() {
@@ -79,7 +80,7 @@ public class administradorDetailFragment extends Fragment {
 					for (int i = 0; i < response.length(); i++) {
 						try {
 							jo = response.getJSONObject(i);
-							vs.add(new usu(jo.getString("cod_pers"), jo.getString("cedula"), jo.getString("nombre"), jo.getString("apellido")));
+							vs.add(new usu(jo.getString("cod_pers"), jo.getString("dat_med"), jo.getString("nombre"), jo.getString("apellido")));
 							
 							
 							}
@@ -137,11 +138,11 @@ public class administradorDetailFragment extends Fragment {
 		private final View.OnClickListener mOnClickListener = new View.OnClickListener() { 
 		@Override public void onClick(View view) {
 			TextView cc;
-			cc=(TextView) view.findViewById(R.id.cc);
+			//cc=(TextView) view.findViewById(R.id.cc);
 			
 			Context context = view.getContext();
 			Intent intent = new Intent(context, rutiusuariof.class);
-			intent.putExtra("codigo",cc.getText());
+			intent.putExtra("codigo",vusa.get(recyclerView1.getChildAdapterPosition(view)).getCod());
 			context.startActivity(intent);
 			
 			
@@ -160,7 +161,7 @@ public class administradorDetailFragment extends Fragment {
 	@Override
 	public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 		View view = LayoutInflater.from(parent.getContext())
-			.inflate(R.layout.usuarios, parent, false);
+			.inflate(R.layout.verrutiusu, parent, false);
 		return new ViewHolder(view);
 	}
 
@@ -168,7 +169,7 @@ public class administradorDetailFragment extends Fragment {
 	public void onBindViewHolder(final ViewHolder holder, int position) {
 		holder.nombre.setText(vusa.get(position).getNombre());
 		holder.apellido.setText(vusa.get(position).getApellido());
-		holder.cc.setText(vusa.get(position).getCod());
+		holder.cc.setText(vusa.get(position).getCedula());
 		
 		holder.itemView.setTag(vusa.get(position));
 		holder.itemView.setOnClickListener(mOnClickListener);

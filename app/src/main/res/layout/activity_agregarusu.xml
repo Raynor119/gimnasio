@@ -34,6 +34,7 @@
 		android:layout_marginLeft="5dp"
 		android:layout_marginTop="120dp"
 		android:orientation="vertical">
+
 		<android.support.v7.widget.CardView
 			xmlns:app="http://schemas.android.com/apk/res-auto"
 			android:layout_width="match_parent"
@@ -42,24 +43,252 @@
 			android:layout_gravity="center"
 			android:layout_marginTop="20dp"
 			android:background="@color/whiteCardColor">
+			<ScrollView
+				android:layout_width="match_parent"
+				android:layout_margin="20dp"
+				android:layout_height="match_parent">
 
-			<android.support.v7.widget.RecyclerView
-				xmlns:app="http://schemas.android.com/apk/res-auto"
-				xmlns:tools="http://schemas.android.com/tools"
-				android:layout_marginTop="20dp"
-				android:layout_marginRight="9dp"
-				android:layout_marginLeft="9dp"
-				android:id="@+id/listru"
-				android:name="com.pixels.gimnasio.administradorListFragment"
+			<LinearLayout
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
-				app:layoutManager="LinearLayoutManager"
-				android:state_hovered="true"
-				tools:context=".administradorListActivity"
-				tools:listitem="@layout/administrador_list_content"/>
+				
+				android:orientation="vertical">
 
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					
+					android:gravity="center">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#000000"
+						android:textSize="17dp"
+						android:text="Codigo del Usuaio: "/>
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal"
+					android:gravity="center">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#000000"
+						android:textSize="17dp"
+						android:text="Cedula: "/>
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:layout_marginTop="10dp"
+					android:gravity="center">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#000000"
+						android:textSize="17dp"
+						android:text="Nombre: "/>
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:layout_marginTop="10dp"
+					android:gravity="center">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#000000"
+						android:textSize="17dp"
+						android:text="Apellidos: "/>
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:layout_marginTop="10dp"
+					android:gravity="center">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#000000"
+						android:textSize="17dp"
+						android:text="Edad: "/>
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal"
+					android:gravity="center">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#000000"
+						android:textSize="17dp"
+						android:text="Direccion: "/>
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:layout_marginTop="10dp"
+					android:gravity="center">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#000000"
+						android:textSize="17dp"
+						android:text="Telefono: "/>
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal"
+					android:gravity="center">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#000000"
+						android:textSize="17dp"
+						android:text="Correo Electronico: "/>
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal"
+					android:gravity="center">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#000000"
+						
+						android:textSize="17dp"
+						android:text="Usuario: "/>
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal"
+					android:gravity="center">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#000000"
+						android:textSize="17dp"
+						android:text="Contraseña: "/>
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal"
+					android:gravity="center">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#000000"
+						android:textSize="17dp"
+						android:text="Datos Medicos "/>
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"/>
+
+				</LinearLayout>
+				
+
+				<Button
+					android:layout_width="160dp"
+					android:layout_height="55dp"
+					android:layout_marginTop="60dp"
+					android:background="@drawable/bbutton"
+					android:text="Registrar Usuario"
+					android:textColor="#FFFFFF"
+					android:layout_gravity="center_horizontal"/>
+
+			</LinearLayout>
+			</ScrollView>
 		</android.support.v7.widget.CardView>
-
 
 	</LinearLayout>
 
@@ -79,8 +308,6 @@
 			android:text="Registrar Datos del Usuario"
 			android:layout_marginLeft="10dp"
 			android:textSize="26dp"/>
-		
-
 
 	</LinearLayout>
 
