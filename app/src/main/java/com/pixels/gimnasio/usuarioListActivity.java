@@ -65,6 +65,14 @@ public class usuarioListActivity extends AppCompatActivity {
             mTwoPane = true;
 			usern=(TextView) findViewById(R.id.username);
 			usern.setText(user);
+			Bundle arguments = new Bundle();
+			arguments.putString(usuarioDetailFragment.ARG_ITEM_ID, cod);
+			usuarioDetailFragment fragment = new usuarioDetailFragment();
+			fragment.setArguments(arguments);
+			this.getSupportFragmentManager().beginTransaction()
+				.replace(R.id.usuario_detail_container, fragment)
+				.commit();
+			fragment.ARG_ITEM_ID=cod;
         }
 
         View recyclerView = findViewById(R.id.usuario_list);
@@ -106,18 +114,22 @@ public class usuarioListActivity extends AppCompatActivity {
 						context.startActivity(intent);
 					}
 					
+					if(item.id.equals("3")){
+						arguments.putString(usuarioDetailFragment.ARG_ITEM_ID, cod);
+						usuarioDetailFragment fragment = new usuarioDetailFragment();
+						 fragment.setArguments(arguments);
+						 mParentActivity.getSupportFragmentManager().beginTransaction()
+						        .replace(R.id.usuario_detail_container, fragment)
+						       .commit();
+						fragment.ARG_ITEM_ID=cod;
+					}
 					
 					
 					
 					
 					
 					
-                  //  arguments.putString(usuarioDetailFragment.ARG_ITEM_ID, item.id);
-                   // usuarioDetailFragment fragment = new usuarioDetailFragment();
-                   // fragment.setArguments(arguments);
-                   // mParentActivity.getSupportFragmentManager().beginTransaction()
-                    //        .replace(R.id.usuario_detail_container, fragment)
-                     //       .commit();
+                  //  
                 } else {
 					
 					if( item.id.equals("4")){
@@ -136,15 +148,17 @@ public class usuarioListActivity extends AppCompatActivity {
 						intent.putExtra("codigo",cod);
 						context.startActivity(intent);
 					}
+					if(item.id.equals("3")){
+						Context context = view.getContext();
+						Intent intent = new Intent(context, usuarioDetailActivity.class);
+						intent.putExtra(usuarioDetailFragment.ARG_ITEM_ID, item.id);
+						intent.putExtra("codigo",cod);
+                        context.startActivity(intent);
+					}
 					
 					
 					
-					
-                    //Context context = view.getContext();
-                    //Intent intent = new Intent(context, usuarioDetailActivity.class);
-                    //intent.putExtra(usuarioDetailFragment.ARG_ITEM_ID, item.id);
-
-//                    context.startActivity(intent);
+                    //
                 }
             }
         };

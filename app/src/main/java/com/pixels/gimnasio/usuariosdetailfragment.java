@@ -74,10 +74,10 @@ public class usuariosdetailfragment extends Fragment {
 
 
 
-            CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
-            if (appBarLayout != null) {
-                appBarLayout.setTitle("hola");
-            }
+    //        CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
+      //      if (appBarLayout != null) {
+        //        appBarLayout.setTitle("hola");
+          //  }
         }
     }
 

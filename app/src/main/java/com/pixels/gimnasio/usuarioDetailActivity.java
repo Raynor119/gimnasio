@@ -19,12 +19,15 @@ import android.view.MenuItem;
  */
 public class usuarioDetailActivity extends AppCompatActivity {
 
+	String codi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usuario_detail);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
-        setSupportActionBar(toolbar);
+		Bundle extra = getIntent().getExtras();		
+		codi=extra.getString("codigo");
+       // Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
+        //setSupportActionBar(toolbar);
 
         
 
@@ -51,6 +54,7 @@ public class usuarioDetailActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.usuario_detail_container, fragment)
                     .commit();
+			fragment.ARG_ITEM_ID=codi;
         }
     }
 
