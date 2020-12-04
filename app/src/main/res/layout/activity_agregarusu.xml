@@ -43,251 +43,283 @@
 			android:layout_gravity="center"
 			android:layout_marginTop="20dp"
 			android:background="@color/whiteCardColor">
+
 			<ScrollView
 				android:layout_width="match_parent"
 				android:layout_margin="20dp"
 				android:layout_height="match_parent">
 
-			<LinearLayout
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				
-				android:orientation="vertical">
-
 				<LinearLayout
-					android:layout_height="wrap_content"
 					android:layout_width="match_parent"
-					android:orientation="horizontal"
-					
-					android:gravity="center">
+					android:layout_height="match_parent"
+					android:orientation="vertical">
 
-					<TextView
+					<LinearLayout
 						android:layout_height="wrap_content"
-						android:layout_width="wrap_content"
-						android:textColor="#000000"
-						android:textSize="17dp"
-						android:text="Codigo del Usuaio: "/>
-
-					<EditText
 						android:layout_width="match_parent"
-						android:ems="10"
-						android:layout_height="wrap_content"/>
+						android:orientation="horizontal"
+						android:gravity="center">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textColor="#000000"
+							android:textSize="17dp"
+							android:text="Codigo del Usuaio: "/>
+
+						<EditText
+							android:id="@+id/cod"
+							android:layout_width="match_parent"
+							android:ems="10"
+							android:layout_height="wrap_content"
+							android:inputType="text"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:layout_marginTop="10dp"
+						android:orientation="horizontal"
+						android:gravity="center">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textColor="#000000"
+							android:textSize="17dp"
+							android:text="Cedula: "/>
+
+						<EditText
+							android:layout_width="match_parent"
+							android:ems="10"
+							android:id="@+id/cc"
+							android:layout_height="wrap_content"
+							android:inputType="number"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="horizontal"
+						android:layout_marginTop="10dp"
+						android:gravity="center">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textColor="#000000"
+							android:textSize="17dp"
+							android:text="Nombre: "/>
+
+						<EditText
+							android:layout_width="match_parent"
+							android:ems="10"
+							android:id="@+id/nom"
+							android:layout_height="wrap_content"
+							android:inputType="text"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="horizontal"
+						android:layout_marginTop="10dp"
+						android:gravity="center">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textColor="#000000"
+							android:textSize="17dp"
+							android:text="Apellidos: "/>
+
+						<EditText
+							android:layout_width="match_parent"
+							android:ems="10"
+							android:id="@+id/apelli"
+							android:layout_height="wrap_content"
+							android:inputType="text"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="horizontal"
+						android:layout_marginTop="10dp"
+						android:gravity="center">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textColor="#000000"
+							android:textSize="17dp"
+							android:text="Edad: "/>
+
+						<EditText
+							android:layout_width="match_parent"
+							android:ems="10"
+							android:id="@+id/edad"
+							android:inputType="number"
+							android:layout_height="wrap_content"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:layout_marginTop="10dp"
+						android:orientation="horizontal"
+						android:gravity="center">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textColor="#000000"
+							android:textSize="17dp"
+							android:text="Direccion: "/>
+
+						<EditText
+							android:layout_width="match_parent"
+							android:ems="10"
+							android:id="@+id/direcc"
+							android:inputType="text"
+							android:layout_height="wrap_content"
+							/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="horizontal"
+						android:layout_marginTop="10dp"
+						android:gravity="center">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textColor="#000000"
+							android:textSize="17dp"
+							android:text="Telefono: "/>
+
+						<EditText
+							android:layout_width="match_parent"
+							android:ems="10"
+							android:id="@+id/telef"
+							android:layout_height="wrap_content"
+							android:inputType="number"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:layout_marginTop="10dp"
+						android:orientation="horizontal"
+						android:gravity="center">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textColor="#000000"
+							android:textSize="17dp"
+							android:text="Correo Electronico: "/>
+
+						<EditText
+							android:layout_width="match_parent"
+							android:ems="10"
+							android:id="@+id/corre"
+							android:layout_height="wrap_content"
+							android:inputType="text"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:layout_marginTop="10dp"
+						android:orientation="horizontal"
+						android:gravity="center">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textColor="#000000"
+							android:textSize="17dp"
+							android:text="Usuario: "/>
+
+						<EditText
+							android:layout_width="match_parent"
+							android:ems="10"
+							android:id="@+id/usua"
+							android:layout_height="wrap_content"
+							android:inputType="text"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:layout_marginTop="10dp"
+						android:orientation="horizontal"
+						android:gravity="center">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textColor="#000000"
+							android:textSize="17dp"
+							android:text="Contraseña: "/>
+
+						<EditText
+							android:layout_width="match_parent"
+							android:ems="10"
+							android:id="@+id/contra"
+							android:layout_height="wrap_content"
+							android:inputType="text"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:layout_marginTop="10dp"
+						android:orientation="horizontal"
+						android:gravity="center">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textColor="#000000"
+							android:textSize="17dp"
+							android:text="Datos Medicos "/>
+
+						<EditText
+							android:layout_width="match_parent"
+							android:ems="10"
+							android:id="@+id/datos"
+							android:layout_height="wrap_content"/>
+
+					</LinearLayout>
+
+					<Button
+						android:id="@+id/b1"
+						android:layout_width="160dp"
+						android:layout_height="55dp"
+						android:layout_marginTop="60dp"
+						android:background="@drawable/bbutton"
+						android:text="Registrar Usuario"
+						android:textColor="#FFFFFF"
+						android:layout_gravity="center_horizontal"/>
 
 				</LinearLayout>
-				<LinearLayout
-					android:layout_height="wrap_content"
-					android:layout_width="match_parent"
-					android:layout_marginTop="10dp"
-					android:orientation="horizontal"
-					android:gravity="center">
 
-					<TextView
-						android:layout_height="wrap_content"
-						android:layout_width="wrap_content"
-						android:textColor="#000000"
-						android:textSize="17dp"
-						android:text="Cedula: "/>
-
-					<EditText
-						android:layout_width="match_parent"
-						android:ems="10"
-						android:layout_height="wrap_content"/>
-
-				</LinearLayout>
-				<LinearLayout
-					android:layout_height="wrap_content"
-					android:layout_width="match_parent"
-					android:orientation="horizontal"
-					android:layout_marginTop="10dp"
-					android:gravity="center">
-
-					<TextView
-						android:layout_height="wrap_content"
-						android:layout_width="wrap_content"
-						android:textColor="#000000"
-						android:textSize="17dp"
-						android:text="Nombre: "/>
-
-					<EditText
-						android:layout_width="match_parent"
-						android:ems="10"
-						android:layout_height="wrap_content"/>
-
-				</LinearLayout>
-				<LinearLayout
-					android:layout_height="wrap_content"
-					android:layout_width="match_parent"
-					android:orientation="horizontal"
-					android:layout_marginTop="10dp"
-					android:gravity="center">
-
-					<TextView
-						android:layout_height="wrap_content"
-						android:layout_width="wrap_content"
-						android:textColor="#000000"
-						android:textSize="17dp"
-						android:text="Apellidos: "/>
-
-					<EditText
-						android:layout_width="match_parent"
-						android:ems="10"
-						android:layout_height="wrap_content"/>
-
-				</LinearLayout>
-				<LinearLayout
-					android:layout_height="wrap_content"
-					android:layout_width="match_parent"
-					android:orientation="horizontal"
-					android:layout_marginTop="10dp"
-					android:gravity="center">
-
-					<TextView
-						android:layout_height="wrap_content"
-						android:layout_width="wrap_content"
-						android:textColor="#000000"
-						android:textSize="17dp"
-						android:text="Edad: "/>
-
-					<EditText
-						android:layout_width="match_parent"
-						android:ems="10"
-						android:layout_height="wrap_content"/>
-
-				</LinearLayout>
-				<LinearLayout
-					android:layout_height="wrap_content"
-					android:layout_width="match_parent"
-					android:layout_marginTop="10dp"
-					android:orientation="horizontal"
-					android:gravity="center">
-
-					<TextView
-						android:layout_height="wrap_content"
-						android:layout_width="wrap_content"
-						android:textColor="#000000"
-						android:textSize="17dp"
-						android:text="Direccion: "/>
-
-					<EditText
-						android:layout_width="match_parent"
-						android:ems="10"
-						android:layout_height="wrap_content"/>
-
-				</LinearLayout>
-				<LinearLayout
-					android:layout_height="wrap_content"
-					android:layout_width="match_parent"
-					android:orientation="horizontal"
-					android:layout_marginTop="10dp"
-					android:gravity="center">
-
-					<TextView
-						android:layout_height="wrap_content"
-						android:layout_width="wrap_content"
-						android:textColor="#000000"
-						android:textSize="17dp"
-						android:text="Telefono: "/>
-
-					<EditText
-						android:layout_width="match_parent"
-						android:ems="10"
-						android:layout_height="wrap_content"/>
-
-				</LinearLayout>
-				<LinearLayout
-					android:layout_height="wrap_content"
-					android:layout_width="match_parent"
-					android:layout_marginTop="10dp"
-					android:orientation="horizontal"
-					android:gravity="center">
-
-					<TextView
-						android:layout_height="wrap_content"
-						android:layout_width="wrap_content"
-						android:textColor="#000000"
-						android:textSize="17dp"
-						android:text="Correo Electronico: "/>
-
-					<EditText
-						android:layout_width="match_parent"
-						android:ems="10"
-						android:layout_height="wrap_content"/>
-
-				</LinearLayout>
-				<LinearLayout
-					android:layout_height="wrap_content"
-					android:layout_width="match_parent"
-					android:layout_marginTop="10dp"
-					android:orientation="horizontal"
-					android:gravity="center">
-
-					<TextView
-						android:layout_height="wrap_content"
-						android:layout_width="wrap_content"
-						android:textColor="#000000"
-						
-						android:textSize="17dp"
-						android:text="Usuario: "/>
-
-					<EditText
-						android:layout_width="match_parent"
-						android:ems="10"
-						android:layout_height="wrap_content"/>
-
-				</LinearLayout>
-				<LinearLayout
-					android:layout_height="wrap_content"
-					android:layout_width="match_parent"
-					android:layout_marginTop="10dp"
-					android:orientation="horizontal"
-					android:gravity="center">
-
-					<TextView
-						android:layout_height="wrap_content"
-						android:layout_width="wrap_content"
-						android:textColor="#000000"
-						android:textSize="17dp"
-						android:text="Contraseña: "/>
-
-					<EditText
-						android:layout_width="match_parent"
-						android:ems="10"
-						android:layout_height="wrap_content"/>
-
-				</LinearLayout>
-				<LinearLayout
-					android:layout_height="wrap_content"
-					android:layout_width="match_parent"
-					android:layout_marginTop="10dp"
-					android:orientation="horizontal"
-					android:gravity="center">
-
-					<TextView
-						android:layout_height="wrap_content"
-						android:layout_width="wrap_content"
-						android:textColor="#000000"
-						android:textSize="17dp"
-						android:text="Datos Medicos "/>
-
-					<EditText
-						android:layout_width="match_parent"
-						android:ems="10"
-						android:layout_height="wrap_content"/>
-
-				</LinearLayout>
-				
-
-				<Button
-					android:layout_width="160dp"
-					android:layout_height="55dp"
-					android:layout_marginTop="60dp"
-					android:background="@drawable/bbutton"
-					android:text="Registrar Usuario"
-					android:textColor="#FFFFFF"
-					android:layout_gravity="center_horizontal"/>
-
-			</LinearLayout>
 			</ScrollView>
+
 		</android.support.v7.widget.CardView>
 
 	</LinearLayout>

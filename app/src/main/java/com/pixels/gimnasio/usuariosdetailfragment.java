@@ -45,6 +45,7 @@ public class usuariosdetailfragment extends Fragment {
 	List<usu> vs = new ArrayList<>();
 	List<datousua> ll = new ArrayList<>();
 	RecyclerView recyclerView1;
+	int i=0;
     /**
 	
      * The dummy content this fragment is presenting.
@@ -92,10 +93,17 @@ public class usuariosdetailfragment extends Fragment {
 					//Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                       //  .setAction("Action", null).show();
 					  
-					Context context = view.getContext();
-					Intent intent = new Intent(context, agregarusu.class);
-					context.startActivity(intent);
-					  
+					
+					if(i==1){
+					vs.clear();
+					recicle();
+					i=0;
+					} else{
+						i=1;
+						Context context = view.getContext();
+						Intent intent = new Intent(context, agregarusu.class);
+						context.startActivity(intent);
+					}
 					  
 				}
 			});

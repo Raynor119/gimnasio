@@ -20,9 +20,64 @@ import android.app.Activity;import android.os.Bundle;import android.support.desi
 
 public class agregarusu extends AppCompatActivity
 {
+	EditText cod,cedula,nombre,apellido,edad,direccion,telefono,correo,username,password,datM;
+	Button boton;
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_agregarusu);
+		cod=(EditText)findViewById(R.id.cod);
+		cedula=(EditText)findViewById(R.id.cc);
+		nombre=(EditText)findViewById(R.id.nom);
+		apellido=(EditText)findViewById(R.id.apelli);
+		edad=(EditText)findViewById(R.id.edad);
+		direccion=(EditText)findViewById(R.id.direcc);
+		telefono=(EditText)findViewById(R.id.telef);
+		correo=(EditText)findViewById(R.id.corre);
+		username=(EditText)findViewById(R.id.usua);
+		password=(EditText)findViewById(R.id.contra);
+		datM=(EditText)findViewById(R.id.datos);
+		boton=(Button)findViewById(R.id.b1);
+		
+		boton.setOnClickListener(new View.OnClickListener(){
+
+				@Override
+				public void onClick(View p1)
+				{
+					ip ii=new ip();	
+					String ip=ii.ip();		
+					String Url="http://"+ip+"/inserusu.php?codigo="+cod.getText()+"&cedula="+cedula.getText()+"&nombre="+nombre.getText()+"&apellido="+apellido.getText()+"&edad="+edad.getText()+"&direccion="+direccion.getText()+"&telefono="+telefono.getText().toString()+"&correo="+correo.getText().toString()+"&usaurio="+username.getText()+"&contrasena="+password.getText()+"&datom="+datM.getText();
+					JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Url, new Response.Listener<JSONArray>() {
+
+							@Override
+							public void onResponse(JSONArray response) {
+
+							}
+
+
+
+						}, new Response.ErrorListener() {
+							@Override
+							public void onErrorResponse(VolleyError error) {
+								new android.os.Handler().postDelayed(new Runnable() {
+
+
+										@Override
+										public void run() {
+											//Toast.makeText(getApplicationContext(), "Error de Conexion Verifique su conexion a Internet",Toast.LENGTH_LONG).show();
+
+										}},1);
+							}
+						});
+					RequestQueue requestQueue;
+					requestQueue= Volley.newRequestQueue(getApplicationContext());
+					requestQueue.add(jsonArrayRequest);
+					Toast.makeText(getApplicationContext(), "se Agrego el Usuario",Toast.LENGTH_LONG).show();
+					
+					finish();
+				}
+				
+			
+		});
 		}
 }
