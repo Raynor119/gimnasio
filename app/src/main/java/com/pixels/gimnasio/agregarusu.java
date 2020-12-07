@@ -44,6 +44,9 @@ public class agregarusu extends AppCompatActivity
 				@Override
 				public void onClick(View p1)
 				{
+					if(cod.getText().toString().equals("") || cedula.getText().toString().equals("") || nombre.getText().toString().equals("") || apellido.getText().toString().equals("") || edad.getText().toString().equals("") || direccion.getText().toString().equals("") || telefono.getText().toString().equals("") || correo.getText().toString().equals("") || username.getText().toString().equals("") || password.getText().toString().equals("") || datM.getText().toString().equals("") ){
+						Toast.makeText(getApplicationContext(), "LLene todos los Campos",Toast.LENGTH_LONG).show();
+					}else{
 					ip ii=new ip();	
 					String ip=ii.ip();		
 					String Url="http://"+ip+"/inserusu.php?codigo="+cod.getText()+"&cedula="+cedula.getText()+"&nombre="+nombre.getText()+"&apellido="+apellido.getText()+"&edad="+edad.getText()+"&direccion="+direccion.getText()+"&telefono="+telefono.getText().toString()+"&correo="+correo.getText().toString()+"&usaurio="+username.getText()+"&contrasena="+password.getText()+"&datom="+datM.getText();
@@ -75,6 +78,7 @@ public class agregarusu extends AppCompatActivity
 					Toast.makeText(getApplicationContext(), "se Agrego el Usuario",Toast.LENGTH_LONG).show();
 					
 					finish();
+					}
 				}
 				
 			

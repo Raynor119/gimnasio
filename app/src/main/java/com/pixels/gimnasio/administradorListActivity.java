@@ -128,6 +128,22 @@ public class administradorListActivity extends AppCompatActivity {
                             .replace(R.id.administrador_detail_container, fragment)
                             .commit();
 					}
+					if(item.id.equals("4")){
+						arguments.putString(descudetailfragment.ARG_ITEM_ID, item.id);
+						descudetailfragment fragment = new descudetailfragment();
+						fragment.setArguments(arguments);
+						mParentActivity.getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.administrador_detail_container, fragment)
+                            .commit();
+					}
+					if(item.id.equals("5")){
+						arguments.putString(preciodetailfragment.ARG_ITEM_ID, item.id);
+						preciodetailfragment fragment = new preciodetailfragment();
+						fragment.setArguments(arguments);
+						mParentActivity.getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.administrador_detail_container, fragment)
+                            .commit();
+					}
 					
                     
                 } else {
@@ -151,6 +167,18 @@ public class administradorListActivity extends AppCompatActivity {
 						Context context = view.getContext();
 						Intent intent = new Intent(context,  usuariosdetailactivity.class);
 						intent.putExtra(usuariosdetailfragment.ARG_ITEM_ID, item.id);
+						context.startActivity(intent);
+					}
+					if(item.id.equals("4")){
+						Context context = view.getContext();
+						Intent intent = new Intent(context,  descudetailactivity.class);
+						intent.putExtra(descudetailfragment.ARG_ITEM_ID, item.id);
+						context.startActivity(intent);
+					}
+					if(item.id.equals("5")){
+						Context context = view.getContext();
+						Intent intent = new Intent(context,  preciodetailactivity.class);
+						intent.putExtra(preciodetailfragment.ARG_ITEM_ID, item.id);
 						context.startActivity(intent);
 					}
                 }
