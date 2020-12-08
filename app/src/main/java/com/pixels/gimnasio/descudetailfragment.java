@@ -263,9 +263,15 @@ public class descudetailfragment extends Fragment {
 					.setPositiveButton("Asignar Descuento", new DialogInterface.OnClickListener(){
 						@Override
 						public void onClick(DialogInterface dialog,int which){
+							
+							
+							
+							
+							Intent intent =new Intent(getActivity(),agusdesc.class);
+							intent.putExtra("codigo",vusa.get(recyclerView1.getChildAdapterPosition(vie)).getCod());
+							getActivity().startActivity(intent);
 
-
-							//Toast.makeText(mParentActivity, "",Toast.LENGTH_LONG).show();
+							
 
 
 						}

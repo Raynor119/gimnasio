@@ -28,6 +28,11 @@
 		android:theme="@style/AppTheme">
 
 		<activity
+			android:name=".agusdesc"
+			android:supportsRtl="true"
+			android:theme="@style/AppTheme.NoActionBar"/>
+
+		<activity
 			android:name=".descudetailactivity"
 			android:supportsRtl="true"
 			android:theme="@style/AppTheme.NoActionBar"/>

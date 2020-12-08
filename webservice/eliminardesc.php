@@ -41,8 +41,12 @@ else
 $codigo=$_GET['codigo'];
 
 
+$query1 = "update usuario set id_desc=null where id_desc='".$codigo."'";
+$consulta1 = pg_query($conexion, $query1);
 $query = "DELETE FROM descuento where id_desc = '".$codigo."'";
 $consulta = pg_query($conexion, $query);
+
+
 
 
 if(!$consulta){
