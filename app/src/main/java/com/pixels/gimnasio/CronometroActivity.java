@@ -39,9 +39,6 @@ import java.util.Locale;
 import android.widget.ProgressBar;
 
 
-
-
-
 public class CronometroActivity extends AppCompatActivity {
 	
 

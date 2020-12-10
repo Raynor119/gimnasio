@@ -4,4 +4,14 @@
     <string name="title_usuario_detail">usuario Detail</string>
     <string name="title_administrador_list">administradores</string>
     <string name="title_administrador_detail">administrador Detail</string>
+
+    <string name="titulo">Informacion de tarjeta</string>
+    <string name="numeroTarjeta">No. Tarjeta</string>
+    <string name="nombre">Nombre</string>
+    <string name="mes">mes</string>
+    <string name="anio">anio</string>
+    <string name="cvv">CVV</string>
+    <string name="scan">escanera tarjeta</string>
+    <string name="guardar">Guardar</string>
+    <string name="faltancampos">Faltan campos requeridos</string>
 </resources>

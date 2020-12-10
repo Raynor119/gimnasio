@@ -26,14 +26,7 @@ public class preciodetailactivity extends AppCompatActivity {
 		protected void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.activity_administrador_detail);
-
-
-
-
-
-
 			// Show the Up button in the action bar.
-
 
 			// savedInstanceState is non-null when there is fragment state
 			// saved from previous configurations of this activity
