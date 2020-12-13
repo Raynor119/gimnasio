@@ -28,6 +28,16 @@
 		android:theme="@style/AppTheme">
 
 		<activity
+			android:name=".vpagosA"
+			android:supportsRtl="true"
+			android:theme="@style/AppTheme.NoActionBar"/>
+
+		<activity
+			android:name=".pagos"
+			android:supportsRtl="true"
+			android:theme="@style/AppTheme.NoActionBar"/>
+
+		<activity
 			android:name=".agusdesc"
 			android:supportsRtl="true"
 			android:theme="@style/AppTheme.NoActionBar"/>

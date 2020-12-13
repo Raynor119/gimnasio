@@ -128,6 +128,14 @@ public class administradorListActivity extends AppCompatActivity {
                             .replace(R.id.administrador_detail_container, fragment)
                             .commit();
 					}
+					if(item.id.equals("3")){
+						arguments.putString(vpagos.ARG_ITEM_ID, item.id);
+						vpagos fragment = new vpagos();
+						fragment.setArguments(arguments);
+						mParentActivity.getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.administrador_detail_container, fragment)
+                            .commit();
+					}
 					if(item.id.equals("4")){
 						arguments.putString(descudetailfragment.ARG_ITEM_ID, item.id);
 						descudetailfragment fragment = new descudetailfragment();
@@ -167,6 +175,12 @@ public class administradorListActivity extends AppCompatActivity {
 						Context context = view.getContext();
 						Intent intent = new Intent(context,  usuariosdetailactivity.class);
 						intent.putExtra(usuariosdetailfragment.ARG_ITEM_ID, item.id);
+						context.startActivity(intent);
+					}
+					if(item.id.equals("3")){
+						Context context = view.getContext();
+						Intent intent = new Intent(context,  vpagosA.class);
+						intent.putExtra(vpagos.ARG_ITEM_ID, item.id);
 						context.startActivity(intent);
 					}
 					if(item.id.equals("4")){

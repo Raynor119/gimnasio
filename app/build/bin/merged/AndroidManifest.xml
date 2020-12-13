@@ -16,6 +16,16 @@
         android:name="android.hardware.touchscreen"
         android:required="true" />
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/mono"
@@ -23,6 +33,14 @@
         android:resizeableActivity="true"
         android:state_hovered="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.pixels.gimnasio.vpagosA"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.pixels.gimnasio.pagos"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.pixels.gimnasio.agusdesc"
             android:supportsRtl="true"
@@ -101,6 +119,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
     </application>
 
 </manifest>
